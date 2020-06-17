@@ -22,7 +22,6 @@ DriveBase::DriveBase(int pinENA,int pinIN1, int pinIN2, int pinIN3, int pinIN4, 
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
-
 }
 
 void DriveBase::IRON() {

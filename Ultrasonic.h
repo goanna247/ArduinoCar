@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <ArduinoCar.h>
 
 class UltraSonic {
   public:
@@ -8,5 +9,7 @@ class UltraSonic {
 
   private:
     int UltraPort;
-    long Duration, cm;
+    long duration, cm;
+    void Calc();
+    long microsecondsToCentimeters(long microseconds);
 };

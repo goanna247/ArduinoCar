@@ -11,31 +11,52 @@ LED::LED(int port1,int port2, int port3) {
 }
 
 void LED::OFF() {
-  RGBColour(0, 0, 0); // off
+  digitalWrite(blueLED, LOW);   
+  digitalWrite(greenLED, LOW);
+  digitalWrite(redLED, LOW); 
 }
 
 void LED::ON(int colour) {
   if (colour == 0) {
-    RGBColour(255, 0, 0); //red 
+    // RGBColour(255, 0, 0); //blue
+    digitalWrite(blueLED, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, LOW);
+    digitalWrite(redLED, LOW);
   } else if (colour == 1) {
-    RGBColour(0, 255, 0); //green
+    // RGBColour(0, 255, 0); //green
+    digitalWrite(blueLED, LOW);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, HIGH);
+    digitalWrite(redLED, LOW);
   } else if (colour == 2) {
-    RGBColour(0, 0, 255); //blue 
+    // RGBColour(0, 0, 255); //red
+    digitalWrite(blueLED, LOW);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, LOW);
+    digitalWrite(redLED, HIGH);
   } else if (colour == 3) {
-    RGBColour(255, 255, 125); //raspberry 
+    // RGBColour(255, 255, 125); //aqua
+    digitalWrite(blueLED, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, HIGH);
+    digitalWrite(redLED, LOW);
   } else if (colour == 4) {
-    RGBColour(0, 255, 255); //cyan 
+    // RGBColour(0, 255, 255); //yellow 
+    digitalWrite(blueLED, LOW);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, HIGH);
+    digitalWrite(redLED, HIGH);
   } else if (colour == 5) {
-    RGBColour(255, 0, 255); //magenta
-  } else if (colour == 6) {
-    RGBColour(255, 255, 0); //yellow
-  } else if (colour == 7) {
-    RGBColour(255, 255, 255); //white 
-  }
+    // RGBColour(255, 0, 255); //purple
+    digitalWrite(blueLED, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(greenLED, LOW);
+    digitalWrite(redLED, HIGH);
+  } 
+  // else if (colour == 6) {
+  //   RGBColour(255, 255, 0); //yellow
+  // } else if (colour == 7) {
+  //   RGBColour(255, 255, 255); //white 
+  // }
 }
 
-void LED::RGBColour(int redLightValue, int greenLightValue, int blueLightValue) {
-  analogWrite(redLED, redLightValue);
-  analogWrite(greenLED, greenLightValue);
-  analogWrite(blueLED, blueLightValue);
-}
+// void LED::RGBColour(int redLightValue, int greenLightValue, int blueLightValue) {
+//   analogWrite(redLED, redLightValue);
+//   analogWrite(greenLED, greenLightValue);
+//   analogWrite(blueLED, blueLightValue);
+// }
