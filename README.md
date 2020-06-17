@@ -27,12 +27,12 @@ Then you just call these 4 variables in your Controller function. This will allo
 * just a note about controlling the car, if you press the button on the controller really quickly the IR sensor won’t detect you stopped clicking so it will run until you press another button. You can use this to your advantage making your car drive long distances. But if you just want a shorter drive hold the button down for half a second. 
 
 The LED example and class are still in beta phase so it might work or it might not depending on how happy the programming gods are today. But different numbers correlates to a colour
-0 = blue 
-1 = green 
-2 = red
-3 = aqua 
-4 = yellow 
-5 = purple 
+* 0 = blue 
+* 1 = green 
+* 2 = red
+* 3 = aqua 
+* 4 = yellow 
+* 5 = purple 
 
 # What's next?
 I will be making updates every month to provide more features. I recommend if you are getting bored to try and set up an ultrasonic sensor to detect whether the robot is about to hit a wall.
