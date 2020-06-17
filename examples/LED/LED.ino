@@ -16,7 +16,7 @@ void setup() {
 //this runs continously 
 void loop() {
   _led.ON(5);
-  //turn on the LED (magenta)
+  //turn on the LED (purple)
   _drivebase.forwards(250, 500);
   //make the car go forwards for half a second
   _led.OFF();
