@@ -4,12 +4,11 @@
 class UltraSonic {
   public:
     UltraSonic(int port);
-    void Bounce(int distance);
     void Stop(int distance);
-
-  private:
+    void Calc();
     int UltraPort;
     long duration, cm;
-    void Calc();
-    long microsecondsToCentimeters(long microseconds);
+    long microsecondsToCentimeters(long microseconds);  
+  private:
+
 };
