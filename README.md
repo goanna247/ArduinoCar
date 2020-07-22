@@ -34,5 +34,8 @@ The LED example and class are still in beta phase so it might work or it might n
 * 4 = yellow 
 * 5 = purple 
 
+
+If you spot an error or a function isnt working properly please just put an issue so that i can fix it. 
+
 # What's next?
 I will be making updates every month to provide more features. I recommend if you are getting bored to try and set up an ultrasonic sensor to detect whether the robot is about to hit a wall.
